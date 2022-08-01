@@ -14,25 +14,41 @@
 
     <title>Frontend Mentor | Ping coming soon page</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
   <body>
     <div class="container">
       <img src="./images/logo.svg" alt="PING logo" />
-      <h1>We are launching <span>soon!</span></h1>
+      <h1><span>We are launching</span> soon!</h1>
       <p>Subscribe and get notified</p>
       <form id="form">
         <div class="input-field">
-          <input type="text" id="emailField" />
+          <input
+            type="text"
+            id="emailField"
+            placeholder="Your email address..."
+          />
           <div id="error">Please provide a valid email address.</div>
         </div>
         <button class="notify-btn">Notify Me</button>
       </form>
       <img
+        class="illustration"
+        style="width: 100%"
         src="./images/illustration-dashboard.png"
         alt="dashboard illustration"
       />
-      <div class="social"></div>
-      <div class="copy">&copy;Copyright Ping.All rights reserved.</div>
+      <div class="social">
+        <a href="#">
+          <i class="uil uil-facebook-f"></i>
+        </a>
+        <a href="#"><i class="uil uil-twitter"></i></a>
+        <a href="#"><i class="uil uil-instagram"></i></a>
+      </div>
+      <div class="copy">&copy;Copyright Ping. All rights reserved.</div>
     </div>
   </body>
 </html>

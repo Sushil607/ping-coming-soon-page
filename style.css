@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/**
+* ! General Styles
+**/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+:root{
+    --primary-blue: hsl(223, 87%, 63%);
+    --secondary-pale-blue: hsl(223, 100%, 88%);
+    --secondary-light-red: hsl(354, 100%, 66%);
+    --neutral-gray: hsl(0, 0%, 59%) ;
+    --neutral-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+.container{
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+/**
+* ! Typography
+**/
+
+h1{
+    margin: 1rem 0;
+    color: var(--neutral-very-dark-blue);
+    font-weight: 700;
+}
+
+h1 span{
+    color: var(--neutral-gray);
+    font-weight: 300;
+}
+
+p{
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--neutral-very-dark-blue);
+    font-weight: 600;
+}
+
+#error{
+    font-size: 0.7rem;
+    color: var(--secondary-light-red);
+    font-weight: 600;
+}
+
+.copy{
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    color: var(--neutral-gray);
+    font-weight: 300;
+}
+
+/**
+* ! General Styles
+**/
+
+form{
+    margin: 2rem;
+}
+
+input{
+    padding: 0 1rem;
+    border: 2px solid var(--secondary-pale-blue);
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+input::placeholder{
+    color: var(--secondary-pale-blue);
+}
+
+input:focus{
+    outline: none;
+}
+
+.notify-btn{
+    border-radius: 20px;
+    background-color: var(--primary-blue);
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.social a i{
+    border: 1px solid var(--secondary-pale-blue);
+    padding: 0.4rem 0.5rem;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color:var(--primary-blue);
+    transition: all 0.25s ease;
+}
+
+.social a i:hover{
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+@media(min-width:768px){
+    .container{
+        margin: 1rem auto;
+        width: 50%;
+    }
+
+    .illustration{
+        height: 300px;
+    }
+
+    form{
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    form #error{
+        margin: 2px 20px;
+        text-align: left;
+    }
+}
