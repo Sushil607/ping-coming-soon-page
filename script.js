@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
   if (email.value.trim() === "") {
     email.style.cssText = "border: 2px solid var(--secondary-light-red)";
     error.style.cssText = "display:block";
-    error.innerText = "Email cannot be empty.";
+    error.innerText = "Whoops! It looks like you forgot to add your email.";
   } else if (ValidateEmail(email.value)) {
     email.style.cssText = "border: 2px solid var(--secondary-light-red)";
     error.style.cssText = "display:block";

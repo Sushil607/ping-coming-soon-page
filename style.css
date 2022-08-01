@@ -59,6 +59,7 @@ p{
     font-size: 0.7rem;
     color: var(--secondary-light-red);
     font-weight: 300;
+    font-style: italic;
     display: none;
 }
 
