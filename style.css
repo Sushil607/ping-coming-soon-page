@@ -58,7 +58,8 @@ p{
 #error{
     font-size: 0.7rem;
     color: var(--secondary-light-red);
-    font-weight: 600;
+    font-weight: 300;
+    display: none;
 }
 
 .copy{
@@ -74,6 +75,9 @@ p{
 
 form{
     margin: 2rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
 }
 
 input{
@@ -100,6 +104,10 @@ input:focus{
     color: white;
 }
 
+.notify-btn:hover{
+    box-shadow: -6px 6px 15px lightblue;
+}
+
 .social{
     display: flex;
     gap: 10px;
@@ -123,6 +131,10 @@ input:focus{
     background-color: var(--primary-blue);
     color: white;
 }
+
+/**
+* ! Media Queries
+**/
 
 @media(min-width:768px){
     .container{
